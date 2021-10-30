@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard com Bootstrap</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Vamos iniciar o layout do dashboard pelo navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Administrador</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Após a navbar vamos criar o layout do dashboard com a main-->
+    <div class="main">
+
+        <!--layout do menu superior esquerdo-->
+        <div class="menu">
+            <!--Opção para sair no canto superior direito-->
+            <ul class="visible-xs"><a href="#">Sair</a>
+
+                <!--menu superior esquerdo-->
+                <li class="active"><a href="#">Painel</a></li>
+                <!--opções do menu-->
+                <li><a href="#">Páginas</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Plugin</a></li>
+                <li><a href="#">Ir para o site</a></li>
+            </ul>
+        </div>
+
+        <!-- aqui o conteúdo do dashboard -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- "Card" de Visitas -->
+                    <div class="col-sm-4 text-center">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Visitas</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3>120.310</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- "Card" de Visitas Únicas -->
+                    <div class="col-sm-4 text-center">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Visitas Únicas</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3>13.050</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- "Card" de Visitas Bounce -->
+                    <div class="col-sm-4 text-center">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Visitas Bounce</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3>22%</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--linha que exibe os dois paineis-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Últimas páginas</h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Titulo</th>
+                                            <th class="=hidden-xs">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--primeira linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Bootstrap 4 - O que há de novo?</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-info" href="#">Detalhes</a>
+                                            </td>
+                                        </tr>
+                                        <!--segunda linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Trabalhando com modais</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-info" href="#">Detalhes</a>
+                                            </td>
+                                        </tr>
+                                        <!--terceira linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">O que é um Framework</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-info" href="#">Detalhes</a>
+                                            </td>
+                                        </tr>
+                                        <!--quarta linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Utilizando Scroolspy</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-info" href="#">Detalhes</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Part 2-->
+                    <div class="col-md-6 pull-right">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Categorias</h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th class="=hidden-xs">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--primeira linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Front-End</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-warning" href="#">Editar</a>
+                                            </td>
+                                        </tr>
+                                        <!--segunda linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Back-End</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-warning" href="#">Editar</a>
+                                            </td>
+                                        </tr>
+                                        <!--terceira linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Database</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-warning" href="#">Editar</a>
+                                            </td>
+                                        </tr>
+                                        <!--quarta linha dentro do painel Últimas páginas-->
+                                        <tr>
+                                            <td>
+                                                <a href="#">Mobile</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                <a class="btn btn-xs btn-warning" href="#">Editar</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./dashboard-com-bootstrap/javascript/"></script>
+        <script src="./javascript/jquery-3.1.1.js"></script>
+
+</body>
+
+</html>
